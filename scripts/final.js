@@ -31,7 +31,7 @@ $(function() {
         var cy1 = BABYLON.MeshBuilder.CreateCylinder("cy1", { diameter: 0.2, height: 1 }, scene); //creates the clyinder
         cy1.rotation.z = Math.PI / 2;
         var blue1 = new BABYLON.StandardMaterial("blue1", scene);
-        blue1.diffuseColor = new BABYLON.Color3.Blue();
+        blue1.diffuseColor = new BABYLON.Color3(0, 0.5, 1);
         //create(sp1, cy1, bo1, blue1, 1, 0, 0, 1, 0, 0, 2, 0, 0);
 
 
@@ -40,7 +40,7 @@ $(function() {
         var cy2 = BABYLON.MeshBuilder.CreateCylinder("cy2", { diameter: 0.2, height: 1 }, scene);
         cy2.rotation.z = Math.PI / 2;
         var blue2 = new BABYLON.StandardMaterial("blue2", scene);
-        blue2.diffuseColor = new BABYLON.Color3.Red();
+        blue2.diffuseColor = new BABYLON.Color3(0, 0.5, 1);
         //create(sp2, cy2, bo2, blue2, -1, 0, 0, -1, 0, 0, -2, 0, 0);
 
         var sp3 = BABYLON.MeshBuilder.CreateSphere("sp3", { diameter: 0.4 }, scene);
@@ -48,7 +48,7 @@ $(function() {
         var cy3 = BABYLON.MeshBuilder.CreateCylinder("cy3", { diameter: 0.2, height: 1 }, scene);
         cy3.rotation.x = Math.PI / 2;
         var blue3 = new BABYLON.StandardMaterial("blue3", scene);
-        blue3.diffuseColor = new BABYLON.Color3.Green();
+        blue3.diffuseColor = new BABYLON.Color3(0, 0.5, 1);
         //create(sp3, cy3, bo3, blue3, 0, 0, 1, 0, 0, 1, 0, 0, 2);
 
         var sp4 = BABYLON.MeshBuilder.CreateSphere("sp4", { diameter: 0.4 }, scene);
@@ -63,7 +63,7 @@ $(function() {
         var bo5 = BABYLON.MeshBuilder.CreateSphere("sp1", { diameter: 1 }, scene);
         var cy5 = BABYLON.MeshBuilder.CreateCylinder("cy5", { diameter: 0.2, height: 1 }, scene);
         var blue5 = new BABYLON.StandardMaterial("blue5", scene);
-        blue5.diffuseColor = new BABYLON.Color3.Yellow();
+        blue5.diffuseColor = new BABYLON.Color3(0, 0.5, 1);
         //create(sp5, cy5, bo5, blue5, 0, 1, 0, 0, 1, 0, 0, 2, 0);
 
         var sp6 = BABYLON.MeshBuilder.CreateSphere("sp6", { diameter: 0.4 }, scene);
@@ -226,7 +226,7 @@ $(function() {
         });
         advancedTexture.addControl(but2);
 
-        var but3 = BABYLON.GUI.Button.CreateSimpleButton("but3", "4 e- clouds");
+        var but3 = BABYLON.GUI.Button.CreateSimpleButton("but3", "5 e- clouds");
         but3.width = "60px";
         but3.height = "60px";
         but3.color = "white";
